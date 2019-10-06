@@ -7,7 +7,9 @@
                 값이 변경이 되었을때, 반복문 전체를 그리지 않고 변경된 놈만 새로 그려주기위한 key를 주는 것이다. 
             -->
                 {{todoItem}}
-
+            <span class="removeBtn" @click="removeTodo(todoItem,index)">
+                <i class="fas fa-trash-alt"></i>
+            </span>
             </li>
         </ul>
     </div>
